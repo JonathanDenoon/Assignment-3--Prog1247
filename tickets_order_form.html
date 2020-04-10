@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Party Tickets Order Form</title>
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+
+	<body>
+		<!-- header starts -->
+		<header>
+			<img src="images/pumpkin.gif" alt="Pumpkin" width="85">
+			<h2>The Halloween Store</h2>
+			<h3>For the little Goblin in all of us!</h3>
+		</header>
+		
+		<!-- navigation starts -->
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="about_us.html">About Us</a>
+					<ul>						
+						<li><a href="our_history.html">Our History</a></li>
+						<li><a href="our_team.html">Our Team</a></li>
+					</ul>
+				</li>
+				<li><a href="products.html">Our Products</a></li>
+				<li><a href="tickets_order_form.html">Party Tickets</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- main content starts -->
+		<main>
+			<!-- sidebar starts -->
+			<aside>
+				<ul>
+					<li><a href="products/props.html">Props</a></li>
+					<li><a href="products/costumes.html">Costumes</a></li>
+					<li><a href="products/special.html">Special FX</a></li>
+					<li><a href="products/masks.html">Masks</a></li>
+				</ul>
+			</aside>
+
+			<!-- the main section of the content starts -->
+			<section>
+				<h1>Buy Tickets for a Halloween Party</h1>
+				
+				<form action ="submit_form.php" method="post" name="order_form" id="order_form">
+					<fieldset>
+						<legend>Member Information</legend>
+						<label for="email">E-mail: </label>
+						<input type="email" name="email" id="email" required>
+
+						<label for="firstname">First Name: </label>
+						<input type="text" name="firstname" id="firstname" required>
+
+						<label for="lastname">Last Name: </label>
+						<input type="text" name="lastname" id="lastname" required>
+
+						<label for="address">Address: </label>
+						<input type="text" name="address" id="address">
+
+						<label for="city">City: </label>
+						<input type="text" name="city" id="city" required>
+
+						<label for="province">Province: </label>
+						<input type="text" name="province" id="province" required title="2 letter code">
+
+						<label for="postalcode">Postal Code: </label>
+						<input type="text" name="postalcode" id="postalcode" required title="6 characters">
+
+						<label for="phone">Phone Number: </label>
+						<input type="tel" name="phone" id="phone" title ="999-999-9999">					
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Ordering Information</legend>
+
+						<label for="party">Party: </label>
+						<select id="party" name="party">
+							<option value="fangfeast">Fang-tastic Feast</option>
+							<option value="frightnight">Fright Night</option>
+							<option value="ghoulsout">Ghouls' Night Out</option>
+							<option value="monstermash">Monster Mash</option>
+
+												
+
+						<label for="ordertype">Order Type: </label>
+						<select id="ordertype" name="ordertype">
+							<option value="mempackage">Member Package</option>
+							<option value="donpackage">Donor Package</option>
+							<option value="singletick">Single Tickets</option>
+
+
+							
+							
+
+						<label for="numtickets">Number of Tickets: </label>
+						<input type="text" name="numtickets" id="numtickets">			
+
+					</fieldset>
+
+
+					<fieldset>	
+						<legend>Payment Method</legend>
+						<label for="billme">Bill me</label>
+						<input type="radio" id="billme" name="billme" value="billme">
+						<label for="creditcard">Credit Card</label>
+						<input type="radio" id="creditcard" name="creditcard" value="creditcard">
+	
+					</fieldset>
+
+					<fieldset>
+						<legend>Credit Card Information</legend>
+						<label for="ccinfo">CardType: </label>
+						<select id="ccinfo" name="ccinfo">
+							<option value="visa">Visa</option>
+							<option value="mastercard">Master Card</option>
+							<option value="discover">Discover</option>
+							
+
+						<label for="cardnum">Card Number: </label>
+						<input type="text" name="cardnum" id="cardnum" required title ="16 Digits">
+
+						<label for="expdate">Expiration Date: </label>
+						<select id="expdatemonth" name="expdatemonth">
+							<option value="jan">January</option>
+							<option value="feb">February</option>
+							<option value="mar">March</option>
+							<option value="apr">April</option>							
+							<option value="may">May</option>
+							<option value="jun">June</option>
+							<option value="jul">July</option>							
+							<option value="aug">August</option>
+							<option value="sep">September</option>
+							<option value="oct">October</option>
+							<option value="nov">November</option>
+							<option value="dec">December</option>
+
+						<select id="expdateyear" name="expdateyear">
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Submit Your Order</legend>
+						<button type="button">Submit</button>
+						<button type="button">Reset Fields</button>
+					</fieldset>
+
+
+				</form>
+
+				<!-- the order form goes here -->
+				
+			</section>
+		</main>
+
+		<!-- footer starts -->
+		<footer>
+			<p>&copy; 2020 Jonathan Denoon</p>
+		</footer>
+	</body>
+</html>
